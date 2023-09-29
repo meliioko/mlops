@@ -19,9 +19,9 @@ jardin = 1 if jardin == 'Oui' else 0
 if st.button('Prédire'):
     # Création d'un tableau avec les valeurs d'entrée
     input_data = [[taille, nombre_de_chambre, jardin]]
-    
+
     # Utilisation du modèle pour prédire le prix de la maison
     prediction = model.predict(input_data)
-    
+
     # Affichage du résultat de la prédiction
     st.write(f'Le prix estimé de la maison est de {prediction[0]} euros.')
